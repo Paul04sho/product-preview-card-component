@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    /*border: 4px solid red;*/
+    display: flex;
+    flex-direction: column;
+    max-width: 21.5rem;
+    height: 40rem;
+    background-color: white;
+    overflow: hidden;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.mobile-image{
+    min-height: 15rem;
+    max-width: 21.5rem;
+}
+
+.desktop-image{
+    display: none;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 1rem;
+    padding: 1.313rem 1.563rem 1.438rem 1.563rem;
+}
+
+.perfume{
+    font-family: 'Montserrat';
+    color: hsl(228, 12%, 48%);
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+
+}
+
+h1{
+    font-family: 'Fraunces';
+    color: hsl(212, 21%, 14%);
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2rem;
+    margin-top: 0.5rem;
+}
+
+p{
+    color: hsl(228, 12%, 48%);
+    font-family: 'Montserrat';
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+    margin-top: 0.94rem;
+}
+
+.prices{
+    display: flex;
+    align-items: center;
+}
+
+.current-price{
+    font-family: 'Fraunces';
+    color: hsl(158, 36%, 37%);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.previous-price{
+    font-family: 'Montserrat';
+    color: hsl(228, 12%, 48%);
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: line-through;
+    margin-left: 0.75rem;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 3rem;
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-family: 'Montserrat';
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: auto;
+}
+
+.cart-icon{
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-right: 0.5rem;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: hsl(158, 42%, 18%);
+}
+
+@media screen and (min-width: 768px) {
+    .container{
+        max-width: 37.5rem;
+        height: 28.125rem;
+        flex-direction: row;
+    }
+
+    .mobile-image{
+        display: none;
+    }
+
+    .desktop-image{
+        display: block;
+        max-width: 18.75rem;
+        height: 28.125rem;
+    }
+
+    main{
+     padding: 1.313rem 1.563rem 1.438rem 1.563rem;
+    }
+
+    .btn{
+     width: 100%;
+     height: 3rem;
+    }
+
+    
+
+}
